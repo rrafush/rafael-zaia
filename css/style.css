@@ -955,6 +955,11 @@ p {
 
   /* menu fim */
 
+
+  .submenu ul li a{
+    margin: 10px 20px 0 0;
+  }
+
   .tituloBardi{
     font-size: 2.5em;
   }
