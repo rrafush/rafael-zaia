@@ -955,6 +955,11 @@ p {
 
   /* menu fim */
 
+  .submenu{
+    flex-wrap: nowrap;
+    min-width: 250px;
+  }
+
 
   .submenu ul li a{
     margin: 10px 10px 0 0;
