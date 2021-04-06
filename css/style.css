@@ -955,6 +955,10 @@ p {
 
   /* menu fim */
 
+  .tituloBardi{
+    font-size: 2.5em;
+  }
+
   .submenu ul li a {
     font-size: 0.7rem;
   }
@@ -994,6 +998,20 @@ p {
 
   .imgC3 {
     width: 68vw;
+    height: auto;
+  }
+
+  .imgC3 img{
+    width: 68vw;
+    height: auto;
+  }
+
+  .fundoMcbook{
+    flex-wrap: wrap;
+  }
+
+  .mcbook{
+    min-width: 300px;
   }
 
   .imgC4 {
