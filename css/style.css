@@ -1,0 +1,1051 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Transições */
+
+#transition{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  right: 0;
+  z-index: 1500;
+  background-color: black;
+  pointer-events: none;
+  transition: 500ms ease-in-out;
+}
+
+#transition.is-active{
+  left: 0;
+}
+
+/* fim transições */
+
+.main {
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.h2 {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.h3 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.p {
+  font-size: 1rem;
+  line-height: 1.7em;
+  margin-top: 10px;
+}
+
+p {
+  line-height: 1.7em;
+}
+
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container_titulo {
+  padding-top: 60px;
+  text-align: center;
+  margin-bottom: -50px;
+}
+
+.btn {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  margin: 30px 0;
+  transition: ease-in-out 500ms;
+}
+
+.btn:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(97, 156, 97);
+  transition: ease-in-out 500ms;
+}
+
+/* MENU FIXO */
+.menu {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+}
+
+.container_menu {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 70%;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.menu ul li a {
+  color: white;
+  display: block;
+  font-size: 1rem;
+  padding: 20px 5px 5px 5px;
+  margin-left: 40px;
+  border-bottom: solid 2px rgba(255, 255, 255, 0);
+  transition: ease-in-out 500ms;
+}
+
+.menu ul li a:hover {
+  border-bottom: solid 2px rgba(255, 255, 255, 1);
+  transition: ease-in-out 500ms;
+}
+
+.menu ul li {
+  float: left;
+}
+
+.rz {
+  width: 50px;
+  height: 50px;
+  padding-top: 20px;
+}
+
+/* HEADER */
+
+.header {
+  top: 0;
+  margin: 0;
+  width: 100%;
+  padding: 80px 0;
+  background-color: #080808;
+  background-image: url("../img/home_backgroung.png");
+  background-size: contain;
+  background-position: 70% top;
+  background-repeat: no-repeat;
+}
+
+/* BEM VINDO */
+
+.container_entrada {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 70%;
+  height: 70vh;
+  margin: 0 auto;
+}
+.ola_sou {
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
+}
+.rafael {
+  font-family: montserrat;
+  font-weight: 700;
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.frase_entrada {
+  max-width: 600px;
+  font-size: 2rem;
+  color: white;
+}
+
+/* SUBMENU */
+.submenu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.submenu ul li {
+  float: left;
+}
+
+.submenu ul li a {
+  font-size: 1rem;
+  display: block;
+  padding: 15px 5px 5px 5px;
+  margin: 20px 40px 0 0;
+  border-bottom: solid 2px rgba(255, 255, 255, 0);
+  transition: ease-in-out 500ms;
+}
+
+.submenu ul li a:hover {
+  border-bottom: solid 2px rgba(255, 255, 255, 1);
+  transition: ease-in-out 500ms;
+}
+
+/* PROJETOS */
+.h2_proj {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.p_proj {
+  font-weight: 400;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* INSTITUTO BARDI */
+.container {
+  width: 70%;
+  margin: 80px auto 0 auto;
+  padding: 80px 0;
+}
+
+.card_bardi {
+  max-width: 100%;
+  width: 45%;
+  min-width: 300px;
+  height: 400px;
+  background-image: url(../img/bardi/mockupPhonesCover.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  transition: ease-in-out 500ms;
+  color: transparent;
+  margin-right: 1em;
+  margin-top: 1.5em;
+  position: relative;
+}
+
+.card_bardi::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  transition: ease-in-out 500ms;
+}
+
+.card_bardi:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #d93232;
+  transition: ease-in-out 500ms;
+}
+
+.card_bardi:hover {
+  transform: scale(1.1);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.tituloBardi {
+  color: #d93232;
+  font-size: 4rem;
+  margin: 0 0 50px 20px;
+}
+
+.imgBardi01 {
+  width: 100%;
+}
+
+.destaquePequeno {
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.tituloSessao {
+  font-size: 3rem;
+  max-width: 950px;
+  line-height: 1.3em;
+  margin: 30px 0;
+}
+
+.containerBardi01 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.descricaoBardi01 {
+  max-width: 700px;
+}
+
+.containerBardi02 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerBardi02 img {
+  margin: 2px;
+}
+.containerBardi02 p {
+  max-width: 400px;
+}
+.subcontainerBardi02 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.containerColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.h4 {
+  font-weight: 300;
+  font-size: 2em;
+  margin: 80px 0 50px 0;
+  color: #9b9b9b;
+}
+
+.blob {
+  margin: 2vw 0;
+  width: 30%;
+  min-width: 50px;
+}
+
+.cor {
+  width: 40vw;
+  padding: 100px 20px 20px 20px;
+  font-weight: bold;
+}
+
+.c1 {
+  background-color: #d93232;
+}
+
+.c2 {
+  background-color: #efefef;
+}
+
+.c3 {
+  background-color: black;
+  color: white;
+}
+
+.aplic {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a1 {
+  background-color: #000000;
+}
+
+.a3 {
+  background-color: #d93232;
+}
+
+.subBardi {
+  margin: 10px 0;
+}
+.Aa {
+  font-size: 5em;
+  font-family: Roboto;
+}
+.gridFonts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+  margin-left: 100px;
+}
+
+.bloco {
+  font-size: 1.2em;
+  font-family: Roboto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+
+.reg {
+  font-weight: 400;
+}
+
+.med {
+  font-weight: 500;
+}
+
+.containerFonts {
+  border-top: solid 1px #e7e7e7;
+  padding-top: 50px;
+  margin-top: 20px;
+  justify-content: flex-start;
+}
+
+.imgBardiAplic {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.pWebsite {
+  margin-top: 50px;
+}
+
+.imgC3 {
+  width: 185px;
+}
+
+.antesDepois {
+  width: 580px;
+}
+
+.imgWeb01 {
+  width: 550px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.mcbook {
+  width: 45%;
+}
+
+.fundoMcbook {
+  background-color: #1a202c;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.fundoTelasWeb {
+  background-color: #d8d8d8;
+  margin-top: 40px;
+  padding: 80px 0;
+}
+
+.telasWeb {
+  width: 30vw;
+  display: block;
+  margin: 80px auto;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.281);
+}
+
+.pMobile {
+  margin-bottom: 40px;
+}
+
+.fundoMobile {
+  background-color: #d8d8d8;
+  margin: 80px auto;
+  padding: 80px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.telaCel {
+  width: 10vw;
+  min-width: 150px;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.281);
+}
+
+/* PASSANELA */
+
+/* home */
+.card_passa {
+  max-width: 100%;
+  width: 45%;
+  min-width: 300px;
+  height: 400px;
+  background-image: url(../img/img_passanela.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  transition: ease-in-out 500ms;
+  color: transparent;
+  margin-top: 1.5em;
+  position: relative;
+}
+
+.card_passa::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  transition: ease-in-out 500ms;
+}
+
+.card_passa:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ebcf5f;
+  transition: ease-in-out 500ms;
+}
+
+.card_passa:hover {
+  transform: scale(1.1);
+  color: #2e2e2e;
+}
+
+.z-index {
+  display: block;
+  z-index: 10;
+}
+
+/*projeto*/
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-width: 0;
+  min-height: 0;
+  max-width: 1000px;
+  grid-gap: 3em;
+  overflow: hidden;
+  margin: 80px 50px;
+}
+
+.grid img {
+  align-self: stretch;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.inteira {
+  display: block;
+  grid-column: 1 / span 2;
+  object-fit: cover;
+}
+
+.passanela {
+  background-color: #ebcf5f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 9vh;
+}
+.img_header {
+  display: block;
+  max-width: 100%;
+}
+
+.h2_passanela {
+  padding: 1rem;
+  background-color: white;
+  color: #ff6868;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: clamp(0.938rem, 2vw, 2.188rem);
+  margin-bottom: 20px;
+}
+
+/* CONTATO */
+
+.contato {
+  background-image: url("../img/bg_contato.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.contato .h2 {
+  color: rgb(0, 0, 0);
+  font-size: clamp(0.938rem, 2vw, 2.188rem);
+}
+
+.form input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: #080808;
+  border-color: #d3d3d3;
+  border-width: 1px;
+  border-style: solid;
+}
+.form textarea {
+  width: 80%;
+  padding: 10px;
+  color: #080808;
+  border-color: #d3d3d3;
+  border-style: solid;
+  border-width: 1px;
+  resize: none;
+}
+
+.form label {
+  color: black;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: clamp(0.625rem, 0.8vw, 1rem);
+  color: #000000;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000;
+  outline: none;
+}
+
+/* FOOTER */
+
+.footer {
+  position: absolute;
+  width: 100%;
+  background-color: #080808;
+  padding: 10px;
+  margin: 0;
+}
+.footer .p {
+  margin: 0 auto;
+  font-size: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1666px) {
+  .containerBardi02 p {
+    max-width: 700px;
+    margin-bottom: 50px;
+  }
+  .variac {
+    width: 30vw;
+  }
+
+  .blob {
+    width: 10vw;
+    min-width: 150px;
+  }
+  .telasWeb {
+    width: 40vw;
+  }
+
+  .telaCel {
+    width: 15vw;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+
+    /* menu começo */
+
+  .barResponsivo{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 900;
+  }
+
+  .line{
+    background-color: white;
+    width: 30px;
+    height: 3px;
+    margin: 7px;
+    z-index: 901;
+  }
+
+  .burger{
+    position: absolute;
+    cursor: pointer;
+    right: 13%;
+    top: 20%;
+  }
+
+  .menu {
+    top: 0;
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-in-out;
+  }
+
+  .menu.open{
+    clip-path: circle(1500px at 90% -10%);
+    -webkit-clip-path: circle(1500px at 90% -10%);
+    transition: all 1s ease-in-out;
+  }
+  
+  .container_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+  
+  .menu ul li a {
+    color: white;
+    display: block;
+    font-size: 3rem;
+    padding: 20px;
+    text-align: center;
+    border-bottom: solid 2px rgba(255, 255, 255, 0);
+    transition: ease-in-out 500ms;
+    margin-top: 50px;
+  }
+  
+  .menu ul li a:hover {
+    border-bottom: solid 2px rgba(255, 255, 255, 1);
+    transition: ease-in-out 500ms;
+  }
+  
+  .menu ul li {
+    float: none;
+  }
+  
+  .rz {
+    width: 100px;
+    height: 100px;
+    padding-top: 20px;
+    margin: 0px  0 50px 50px;
+  }
+
+  /* menu fim */
+
+  .frase_entrada {
+    font-size: 1.5rem;
+    max-width: none;
+    width: 70vw;
+  }
+
+  .header {
+    height: 80vh;
+  }
+
+  .rafael {
+    font-size: 4rem;
+  }
+
+  .telaCel {
+    width: 20vw;
+  }
+
+  .variac {
+    width: 30vw;
+  }
+
+  .blob {
+    width: 150px;
+    margin: 0;
+  }
+
+  .frase_entrada {
+    max-width: 350px;
+  }
+
+  .escrita-passanela {
+    margin-top: 30px;
+    text-align: left;
+  }
+
+  .img_contato {
+    width: 100%;
+  }
+  .form textarea,
+  .form input {
+    width: 100%;
+  }
+
+  .grid {
+    display: block;
+  }
+
+  .containerBardi02 p {
+    width: 100%;
+    max-width: 900px;
+  }
+
+  .imgC3 {
+    width: 68vw;
+  }
+
+  .imgC4 {
+    width: 67.5vw;
+  }
+  .telasWeb {
+    width: 50vw;
+  }
+  .header {
+    background-size: 150%;
+    background-position: 60% center;
+  }
+}
+
+/* Celular */
+@media only screen and (max-width: 767px) {
+
+
+   /* menu começo */
+
+   .barResponsivo{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 900;
+  }
+
+  .line{
+    background-color: white;
+    width: 30px;
+    height: 3px;
+    margin: 7px;
+    z-index: 901;
+  }
+
+  .burger{
+    position: absolute;
+    cursor: pointer;
+    right: 13%;
+    top: 20%;
+  }
+
+  .menu {
+    top: 0;
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    clip-path: circle(100px at 90% -15%);
+    -webkit-clip-path: circle(100px at 90% -15%);
+    transition: all 1s ease-in-out;
+  }
+
+  .menu.open{
+    clip-path: circle(1200px at 90% -10%);
+    -webkit-clip-path: circle(1200px at 90% -10%);
+    transition: all 1s ease-in-out;
+  }
+  
+  .container_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+  
+  .menu ul li a {
+    color: white;
+    display: block;
+    font-size: 2rem;
+    padding: 20px;
+    text-align: center;
+    border-bottom: solid 2px rgba(255, 255, 255, 0);
+    transition: ease-in-out 500ms;
+    margin-top: 50px;
+  }
+  
+  .menu ul li a:hover {
+    border-bottom: solid 2px rgba(255, 255, 255, 1);
+    transition: ease-in-out 500ms;
+  }
+  
+  .menu ul li {
+    float: none;
+  }
+  
+  .rz {
+    width: 80px;
+    height: 80px;
+    padding-top: 20px;
+    margin: 0px  0 50px 50px;
+  }
+
+  /* menu fim */
+
+  .submenu ul li a {
+    font-size: 0.7rem;
+  }
+  .rafael {
+    font-size: 3rem;
+  }
+
+  .telaCel {
+    width: 20vw;
+  }
+
+  .telasWeb {
+    width: 50vw;
+    margin: 20px auto;
+  }
+
+  .tituloSessao {
+    font-size: 2em;
+  }
+
+  .aplicLogo {
+    width: 40vw;
+  }
+
+  .gridFonts {
+    margin: 0;
+  }
+
+  .bloco {
+    width: 7vw;
+    height: 7vw;
+  }
+
+  .antesDepois {
+    width: 68vw;
+  }
+
+  .imgC3 {
+    width: 68vw;
+  }
+
+  .imgC4 {
+    width: 67.5vw;
+  }
+
+  .containerBardi02 p {
+    margin-bottom: 50px;
+  }
+
+  .cor {
+    width: 68vw;
+  }
+
+  .blob {
+    width: 20vw;
+    margin: 0;
+  }
+
+  .variac {
+    width: 30vw;
+    min-width: 300px;
+  }
+
+  .frase_entrada {
+    max-width: 250px;
+    font-size: 1rem;
+  }
+
+  .menu ul li a {
+    margin-left: 20px;
+  }
+
+  .header {
+    background-size: 200%;
+    background-position: 70% center;
+  }
+
+  .escrita-passanela {
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .img_contato {
+    width: 100%;
+  }
+  .form textarea,
+  .form input {
+    width: 100%;
+  }
+
+  .grid {
+    display: block;
+  }
+}
