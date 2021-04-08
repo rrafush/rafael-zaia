@@ -601,6 +601,8 @@ p {
   z-index: 10;
 }
 
+
+
  /* PAGINA PASSANELA */
 
  .titulo.passa {
@@ -633,12 +635,16 @@ p {
   margin-top: 20px;
 }
 
-.prototip{
+.imgsMetade {
+  max-width: 100%;
+}
+
+.imgsTela{
   width: 100%;
 }
 
-.cartografia{
-  width: 100%;
+.sessao{
+  margin-top: 6vw;
 }
 
 /*projeto*/
@@ -1210,6 +1216,10 @@ p {
   }
 
   .titulo.bardi {
+    font-size: 2.5em;
+  }
+
+  .titulo.passa {
     font-size: 2.5em;
   }
 
