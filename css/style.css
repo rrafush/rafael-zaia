@@ -333,7 +333,7 @@ p {
   cursor: pointer;
 }
 
-.tituloBardi {
+.titulo.bardi {
   color: #d93232;
   font-size: 4rem;
   margin: 0 0 50px 20px;
@@ -593,11 +593,52 @@ p {
 .card_passa:hover {
   transform: scale(1.1);
   color: #2e2e2e;
+  cursor: pointer;
 }
 
 .z-index {
   display: block;
   z-index: 10;
+}
+
+ /* PAGINA PASSANELA */
+
+ .titulo.passa {
+  color: #FF6868;
+  font-size: 4rem;
+  margin: 0 0 50px 20px;
+}
+
+.fundoAmarelo{
+  background-color: #EBCF5F;
+  padding: 7vw;
+}
+
+.paragrafo {
+  margin: 20px 0;
+}
+
+.obsPassa{
+  width: 40%;
+}
+
+.flexPassa{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imgObs{
+  margin-top: 20px;
+}
+
+.prototip{
+  width: 100%;
+}
+
+.cartografia{
+  width: 100%;
 }
 
 /*projeto*/
@@ -804,6 +845,10 @@ p {
 
   /* menu fim */
 
+  .obsPassa{
+    width: 100%;
+  }
+
   .containerBardi02 p {
     max-width: 700px;
     margin-bottom: 50px;
@@ -921,6 +966,10 @@ p {
   }
 
   /* menu fim */
+
+  .obsPassa{
+    width: 100%;
+  }
 
   .frase_entrada {
     font-size: 1.5rem;
@@ -1092,6 +1141,10 @@ p {
   }
 
   /* menu fim */
+
+  .obsPassa{
+    width: 100%;
+  }
   
   html, body {
     overflow-x: hidden;
@@ -1156,7 +1209,7 @@ p {
     margin: 10px 10px 0 0;
   }
 
-  .tituloBardi {
+  .titulo.bardi {
     font-size: 2.5em;
   }
 
