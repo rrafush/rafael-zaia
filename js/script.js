@@ -17,6 +17,10 @@ window.onload = () => {
     const anchor = anchors[i];
     if(anchor.hasAttribute('target')){
       
+    }else if(anchor.href('#contato')){
+      setTimeout(() => {
+        transition.classList.remove('is-active')
+      }, 500);
     } else {
      anchor.addEventListener('click', e =>{
        e.preventDefault();
