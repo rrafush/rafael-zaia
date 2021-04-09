@@ -15,6 +15,9 @@ window.onload = () => {
 
   for( let i = 0; i < anchors.length; i++){
     const anchor = anchors[i];
+    if(anchor.hasAttribute('target')){
+      
+    } else {
      anchor.addEventListener('click', e =>{
        e.preventDefault();
        let target = e.target.href;
@@ -25,5 +28,5 @@ window.onload = () => {
        }, 500)
      })
    }
-
+  }
 }
