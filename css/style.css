@@ -158,7 +158,7 @@ p {
   padding-top: 20px;
 }
 
-.rz-responsivo{
+.rz-responsivo {
   width: 50px;
   height: 50px;
   position: absolute;
@@ -166,7 +166,7 @@ p {
   left: 15%;
 }
 
-.barResponsivo{
+.barResponsivo {
   display: none;
 }
 
@@ -613,18 +613,16 @@ p {
   z-index: 10;
 }
 
+/* PAGINA PASSANELA */
 
-
- /* PAGINA PASSANELA */
-
- .titulo.passa {
-  color: #FF6868;
+.titulo.passa {
+  color: #ff6868;
   font-size: 4rem;
   margin: 0 0 50px 20px;
 }
 
-.fundoAmarelo{
-  background-color: #EBCF5F;
+.fundoAmarelo {
+  background-color: #ebcf5f;
   padding: 7vw;
 }
 
@@ -632,18 +630,18 @@ p {
   margin: 20px 0;
 }
 
-.obsPassa{
+.obsPassa {
   width: 40%;
 }
 
-.flexPassa{
+.flexPassa {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
-.imgObs{
+.imgObs {
   margin-top: 20px;
 }
 
@@ -651,11 +649,11 @@ p {
   max-width: 100%;
 }
 
-.imgsTela{
+.imgsTela {
   width: 100%;
 }
 
-.sessao{
+.sessao {
   margin-top: 6vw;
 }
 
@@ -773,6 +771,41 @@ p {
 
 /* SOBRE MIM */
 
+.titulo.sobre {
+  max-width: 500px;
+  line-height: 1.7em;
+}
+
+.fundoPreto {
+  color: white;
+  background-color: black;
+}
+
+.ponto {
+  font-weight: bold;
+  margin: 0 15px;
+}
+
+.hr {
+  border-style: none;
+  border-top: 1px solid #3d3d3d;
+  margin: 6vw 0;
+}
+
+.facaDownload{
+  max-width: 250px;
+}
+
+.btnDownload{
+  background-color: white;
+  border-style: none;
+  padding: 10px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 @media only screen and (min-width: 1100px) and (max-width: 1666px) {
   /* menu começo */
 
@@ -870,7 +903,7 @@ p {
 
   /* menu fim */
 
-  .obsPassa{
+  .obsPassa {
     width: 100%;
   }
 
@@ -997,7 +1030,7 @@ p {
 
   /* menu fim */
 
-  .obsPassa{
+  .obsPassa {
     width: 100%;
   }
 
@@ -1177,22 +1210,23 @@ p {
 
   /* menu fim */
 
-  .obsPassa{
+  .obsPassa {
     width: 100%;
   }
-  
-  html, body {
+
+  html,
+  body {
     overflow-x: hidden;
   }
   body {
-    position: relative
+    position: relative;
   }
 
-  .main{
+  .main {
     width: 100vw;
   }
 
-  .container{
+  .container {
     width: 80vw;
   }
 
@@ -1208,7 +1242,7 @@ p {
     left: 50%;
     transform: translateX(-50%);
   }
-  
+
   @keyframes wheel {
     to {
       opacity: 0;
@@ -1316,7 +1350,7 @@ p {
   }
 
   .footer .p {
-    font-size: .5rem;
+    font-size: 0.5rem;
     margin: 0 auto;
   }
 
