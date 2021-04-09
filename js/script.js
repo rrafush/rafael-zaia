@@ -17,7 +17,7 @@ window.onload = () => {
     const anchor = anchors[i];
     if(anchor.hasAttribute('target')){
       
-    }else if(anchor.href('#contato')){
+    }else if(anchor.href('#contato') && anchor.href('#projetos')){
       setTimeout(() => {
         transition.classList.remove('is-active')
       }, 500);
