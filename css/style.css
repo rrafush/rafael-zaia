@@ -792,11 +792,11 @@ p {
   margin: 6vw 0;
 }
 
-.facaDownload{
+.facaDownload {
   max-width: 250px;
 }
 
-.btnDownload{
+.btnDownload {
   background-color: white;
   border-style: none;
   padding: 10px 30px;
@@ -1030,6 +1030,50 @@ p {
 
   /* menu fim */
 
+  /* CARDS */
+
+  .card_bardi {
+    align-items: flex-end;
+    padding-bottom: 5%;
+    color: white;
+    margin-right: 0;
+    margin-top: 40px;
+  }
+
+  .card_bardi::after {
+    top: 60%;
+    height: 40%;
+    left: 0;
+    background-color: #d93232;
+  }
+
+  .card_bardi:hover::after {
+    top: 60%;
+  }
+
+  /* passa */
+
+  .card_passa {
+    align-items: flex-end;
+    padding-bottom: 5%;
+    color: rgb(0, 0, 0);
+    margin-right: 0;
+    margin-top:40px;
+  }
+  
+  .card_passa::after {
+    top: 60%;
+    height: 40%;
+    left: 0;
+    background-color: #ebcf5f;
+  }
+  
+  .card_passa:hover::after {
+    top:60%;
+  }
+
+  /* FIM CARDS */
+
   .obsPassa {
     width: 100%;
   }
@@ -1209,6 +1253,58 @@ p {
   }
 
   /* menu fim */
+
+    /* CARDS */
+
+    .h2_proj{
+      font-size: 1.5rem;
+    }
+
+    .p_proj{
+      font-size: 0.8rem;
+    }
+
+    .card_bardi {
+      align-items: flex-end;
+      padding-bottom: 5%;
+      color: white;
+      margin-right: 0;
+      margin-top: 40px;
+    }
+  
+    .card_bardi::after {
+      top: 70%;
+      height: 30%;
+      left: 0;
+      background-color: #d93232;
+    }
+  
+    .card_bardi:hover::after {
+      top: 70%;
+    }
+  
+    /* passa */
+  
+    .card_passa {
+      align-items: flex-end;
+      padding-bottom: 5%;
+      color: rgb(0, 0, 0);
+      margin-right: 0;
+      margin-top:40px;
+    }
+    
+    .card_passa::after {
+      top: 70%;
+      height: 30%;
+      left: 0;
+      background-color: #ebcf5f;
+    }
+    
+    .card_passa:hover::after {
+      top:70%;
+    }
+  
+    /* FIM CARDS */
 
   .obsPassa {
     width: 100%;
