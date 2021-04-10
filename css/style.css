@@ -771,9 +771,11 @@ p {
 
 /* SOBRE MIM */
 
+
 .capaSobre{
-  width: 30vw;
-  min-width: 300px;
+ width: 100%;
+  left: 100%;
+  object-fit: cover;
 }
 .containerSobre{
   display: flex;
@@ -916,10 +918,15 @@ p {
   /* menu fim */
 
   .capaSobre{
-    width: 100%;
+    max-width: 30vw;
     min-width: 300px;
-    margin-top: 40px;
+    margin-top: 0px;
   }
+
+  .titulo.sobre{
+    max-width: 50%;
+  }
+
   .containerSobre{
     display: flex;
     justify-content: space-between;

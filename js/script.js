@@ -15,13 +15,9 @@ window.onload = () => {
 
   for( let i = 0; i < anchors.length; i++){
     const anchor = anchors[i];
-    if(anchor.hasAttribute('target')){
-      
-    }else if(anchor.href('#contato') && anchor.href('#projetos')){
-      setTimeout(() => {
-        transition.classList.remove('is-active')
-      }, 500);
-    } else {
+  if(anchor.href('index.html#contato') || anchor.href('index.html#projetos')){
+//socorrooooooooooooooooooooooooooooooooooooo
+    } else if (! anchor.hasAttribute('target')) {
      anchor.addEventListener('click', e =>{
        e.preventDefault();
        let target = e.target.href;
