@@ -771,6 +771,18 @@ p {
 
 /* SOBRE MIM */
 
+.capaSobre{
+  width: 30vw;
+  min-width: 300px;
+}
+.containerSobre{
+  display: flex;
+  justify-content: space-between;
+}
+.imgsSobre{
+  width: 48%;
+}
+
 .titulo.sobre {
   max-width: 500px;
   line-height: 1.7em;
@@ -903,6 +915,21 @@ p {
 
   /* menu fim */
 
+  .capaSobre{
+    width: 100%;
+    min-width: 300px;
+    margin-top: 40px;
+  }
+  .containerSobre{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .imgsSobre{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
   .obsPassa {
     width: 100%;
   }
@@ -1029,6 +1056,20 @@ p {
   }
 
   /* menu fim */
+
+  .capaSobre{
+    width: 100%;
+    margin-top: 40px;
+  }
+  .containerSobre{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .imgsSobre{
+    width: 100%;
+    margin-bottom: 40px;
+  }
 
   /* CARDS */
 
@@ -1253,6 +1294,21 @@ p {
   }
 
   /* menu fim */
+
+  .capaSobre{
+    width: 100%;
+    min-width: 300px;
+    margin-top: 40px;
+  }
+  .containerSobre{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .imgsSobre{
+    width: 100%;
+    margin-bottom: 40px;
+  }
 
     /* CARDS */
 
